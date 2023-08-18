@@ -1,1 +1,2 @@
 Psycopg2
+psycopg2-binary
