@@ -6,34 +6,21 @@ import streamlit as st
 
 try:
         conn = psycopg2.connect(
-        database = "gym_tracker_database",
-        user = "ibrahimpostgres",
-        password = "e5pazmmhBf4ooyZEUXWeIC6PvrSJPJXB",
-        host = "dpg-cjfrv2nr2b1s73dp6aqg-a.frankfurt-postgres.render.com",
-        port = 5432
+        database = data_base,
+        user = user ,
+        password = password,
+        host = host ,
+        port = port 
         )
 
 except Exception as error:
     print("opsy:", error)
-
-
-
-
-
-
-
-
-
-
 
 cursor = conn.cursor()
 
 
 
 
-def page_home():
-    st.title("Home Page")
-    st.write("Welcome to the Home Page!")
 
 
 
