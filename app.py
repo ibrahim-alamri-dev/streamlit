@@ -27,7 +27,7 @@ def main():
     if options == "Leg Day":
           today = date.today()
           body_part = options
-          event_date = st.date_input("When's your birthday", (today))
+          event_date = st.date_input("Workout Date", (today))
           type = st.selectbox("Select muscle", ("leg press", "leg extensions", "lying leg curl", "seated calf raises"))
           reps = st.number_input('Reps', min_value=1, max_value=20, value=8, step=1)
           sets = st.number_input('Sets', min_value=1, max_value=20, value=3, step=1)
