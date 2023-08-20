@@ -45,7 +45,7 @@ def main():
     elif options == "Arms Day":
           today = date.today()
           body_part = options
-          event_date = st.date_input("When's your birthday", (today))
+          event_date = st.date_input("Workout Date", (today))
           type = st.selectbox("Select muscle", ("facepulls", "Hammer strength", "Underhand lat pulldown", "back extensions", "seated incline curls"))
           reps = st.number_input('Reps', min_value=1, max_value=20, value=8, step=1)
           sets = st.number_input('Sets', min_value=1, max_value=20, value=3, step=1)
@@ -63,7 +63,7 @@ def main():
     elif options == "Chest Day":
           today = date.today()
           body_part = options
-          event_date = st.date_input("When's your birthday", (today))
+          event_date = st.date_input("Workout Date", (today))
           type = st.selectbox("Select muscle", ("lateral raises", "flat machine press", "decline machine press", "incline machine chest press", "Rope Pushdown", "close grip pushdown"))
           reps = st.number_input('Reps', min_value=1, max_value=20, value=8, step=1)
           sets = st.number_input('Sets', min_value=1, max_value=20, value=3, step=1)
