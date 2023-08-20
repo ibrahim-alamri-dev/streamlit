@@ -3,18 +3,11 @@ from datetime import date
 import streamlit as st 
 
 
-try:
-        conn = psycopg2.connect(
-        database = data_base,
-        user = user ,
-        password = password,
-        host = host ,
-        port = port 
-        )
+@st.cache_resource
+def init_connection():
+    return psycopg2.connect(**st.secrets["postgres"])
 
-except Exception as error:
-    print("opsy:", error)
-
+conn = init_connection()
 cursor = conn.cursor()
 
 
