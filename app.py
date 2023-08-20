@@ -1,5 +1,4 @@
 import psycopg2
-import psycopg2-binary
 from datetime import date
 import streamlit as st 
 
